@@ -57,3 +57,26 @@ svg {
     width: 24px;
     height: 24px;
 }
+.search-buttons{
+    display: flex;
+}
+.button-search {
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    text-align: center;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+.button-goodday {
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    text-align: center;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
