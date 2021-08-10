@@ -2,6 +2,8 @@ body {
     font-size: 12px;
     font-weight: 100;
     background: #fff;
+    height: 100vh;
+
 }
 a {
     text-decoration: none;
@@ -9,6 +11,11 @@ a {
 svg {
     height: 100%;
     width: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
 }
 .header {
     margin-right: 20px;
@@ -60,16 +67,7 @@ svg {
 .search-buttons{
     display: flex;
 }
-.button-search {
-    border-radius: 4px;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    text-align: center;
-    height: 36px;
-    min-width: 54px;
-    cursor: pointer;
-}
+.button-search,
 .button-goodday {
     border-radius: 4px;
     font-size: 14px;
@@ -79,4 +77,14 @@ svg {
     height: 36px;
     min-width: 54px;
     cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
 }
