@@ -9,6 +9,15 @@ a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.87);
 }
+a:hover {
+    text-decoration: underline;
+}
+.picture-icon:hover {
+    opacity: 1;
+    background-color: rgba(60, 64, 67, 0.08);
+    outline: none;
+    border-radius: 50%;
+}
 .english {
     color: #1a0dab;
 }
@@ -33,6 +42,7 @@ svg {
 }
 .header-content {
     min-width: 250px;
+    background-position: -64px -29px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -54,7 +64,7 @@ svg {
 
 }
 .search-bar {
-    min-width: 550px;
+    min-width: 50%;
     border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 25px;
     display: grid;
