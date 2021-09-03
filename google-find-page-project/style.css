@@ -1,18 +1,26 @@
 .wrapper {
-
+background: white;
 }
 .menu {
-
+/*display: grid;
+grid-template-columns: auto 1fr auto;
+grid-template-columns: auto auto;
+grid-template-areas: 
+'logo search-bar settings'
+'. options .';
+grid-gap: 50px;
+justify-content: start;*/
 }
 .search-bar {
-    width: 40%;
+    min-width: 500px;
     height: 44px;
     background: #fff;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     margin: 0 auto;
+    grid-area: search-bar;
     display: grid;
-    grid-template-columns: 1fr 29px 29px;
+    grid-template-columns: 1fr auto auto;
     grid-gap: 5px;
     align-items: center;
     margin-bottom: 25px;
@@ -35,4 +43,12 @@
     width: 24px;
     height: 24px;
     fill: currentColor;
+}
+.setting-cog {
+    width: 24px;
+    height: 24px;
+}
+.setting-cog:hover {
+    background: rgba(218,220,224,.5);
+    text-decoration: none;
 }
