@@ -3,6 +3,8 @@ body {
     font-size: 12px;
     font-weight: 100;
     background: #fff;
+    width: 100vw;
+    height: 100vh;
 
 }
 a {
@@ -23,8 +25,11 @@ a:hover {
     color: #1a0dab;
 }
 svg {
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
     fill: currentColor;
 }
 .wrapper {
@@ -46,10 +51,17 @@ svg {
     align-items: center;
 }
 .menu-icon {
-    height: 24px;
-    width: 24px;
+    height: 48px;
+    width: 48px;
+}
+.pp-link {
+    height: 48px;
+    width: 48px;
 }
 .profile-picture {
+    position: relative;
+    top: 8px;
+    left: 8px;
     border-radius: 50%;
 }
 .content {
