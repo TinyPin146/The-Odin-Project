@@ -13,16 +13,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.picture-icon {
-    width: 48px;
-    height: 48px;
-}
-.picture-icon:hover {
-    opacity: 1;
-    background-color: rgba(60, 64, 67, 0.08);
-    outline: none;
-    border-radius: 50%;
-}
 .english {
     color: #1a0dab;
 }
@@ -38,35 +28,46 @@ a:hover {
     align-content: center;
 }
 .header-content {
-    min-width: 250px;
-    /*background-position: -64px -29px;*/
+    width: 250px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
-.menu-icon {
-    height: 24px;
-    width: 24px;
-}
-.profile-picture {
-    height: 32px;
-    width: auto;
-    border-radius: 50%;
-}
 .picture-icon {
+    position: relative;
     width: 48px;
     height: 48px;
 }
-.picture-icon:hover {
-    opacity: 1;
-    background-color: rgba(60, 64, 67, 0.08);
-    outline: none;
+svg {
+    height: 60%;
+    width: 100%;
+    fill: #5f6368;
+}
+.profile-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.profile-picture:hover {
+    background-color:rgba(60,64,67,0.08);
     border-radius: 50%;
 }
-svg {
-    height: 100%;
-    width: 100%;
-    fill: currentColor;
+.p-picture {
+    position: absolute;
+    top: 15%;
+    height: 70%;
+    width: auto;
+    border-radius: 50%;
+}
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-icon:hover{
+    background-color: rgba(60,64,67,0.08);
+    border-radius: 50%;
+    opacity: .5;
 }
 .content {
     display: flex;
@@ -87,8 +88,9 @@ svg {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 29px 1fr 29px;
-    grid-gap: 5px;
+    grid-gap: 10px;
     align-items: center;
+    justify-content: center;
     margin-bottom: 25px;
 }
 .search-bar:hover {
@@ -96,16 +98,19 @@ svg {
     box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
     border-color: rgba(223,225,229,0);
 }
+.search-bar-question svg {
+    width: 100%;
+    height: 100%;
+}
 .search-bar-question {
-    height: 24px;
-    width: 24px;
+    height: 100%;
+    width: 100%;
     padding: 5px;
     color: #9aa0a6;
 }
 .search-bar-text {
     border: none;
 }
-
 .search-bar-keyboard {
     width: 24px;
     height: 24px;
